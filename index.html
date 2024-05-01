@@ -1,4 +1,4 @@
-<html data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark"> <!--fix web page theme data-bs-theme="light" --> 
 <head>
 
   <link rel="stylesheet" href="css/bootstrap.css"/> <!-- we add css in head -->
@@ -6,11 +6,23 @@
 </head>
 
 <body>
-  
-  <button class="btn btn-primary"> Click </button>
+  <!--
+  Containers are used to pad the content inside of them, and there are two container classes available:
+  i) .container class provides a responsive fixed width container
+  ii) .container-fluid class provides a full width container, spanning the entire width of the viewport
+  -->
+
+  <div class="container"> </div>
+       <div class="row">
+          <div class="col-2 bg-primary">A</div>  <!-- Each will take 2 out of 12 columns -->
+          <div class="col-1 bg-light">B</div>   <!-- bg-primary is Bootstrip background color class-->
+          <div class="col-5 bg-warning">C</div>
+          <div class="col-2 bg-success">D</div>  
+          <div class="col-1 bg-info">E</div>
+          <div class="col-1 bg-secondary">F</div>  
+       </div>
 
   <script src="js/bootstrap.bundle.js"> </script> <!-- we add javascript in body  -->
-
 </body>
 
 
