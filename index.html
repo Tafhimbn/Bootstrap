@@ -10,10 +10,10 @@
 
 <body>
   
-  <!-- Bootstrap 5 Text/ Typography-->
+<!-- Bootstrap 5 Text/ Typography-->
   
   <!-- Heading tags-->
- <!-- Bootstrap 5 uses a default font-size pf 1rem(196px by default)-->
+  <!-- Bootstrap 5 uses a default font-size pf 1rem(196px by default)-->
   <h3>Heading Tag</h3>
   <h3 class="h6">This is an h3 tag with the h6 class</h3>
   <p class="h6">This is an paragraph tag</p>
@@ -71,7 +71,7 @@
  <p class="bg-danger">theme danger background color</p>  
  
  
- <!-- buttons & Button Group -->
+<!-- buttons & Button Group -->
  <!-- Basic buttons-->
  <h2> --- Basic Button ---</h2>
  <button class="btn btn-primary">Button with Primary Theme</button>
@@ -116,11 +116,37 @@
   </div>
 
 
+<!-- Utilities / Helper Class -->
 
+ <!-- padding -->
+  <h2>--- Margin ---</h2>
+  <div class="bg-primary m-1"> Sets margin 1 (smallest margin) </div>
+  <div class="bg-primary m-5"> Sets margin 5 (largest margin) </div>
 
-
+ <!-- padding -->
+  <h2>--- Padding ---</h2>
+  <div class="bg-primary m-1 p-1 "> Sets margin 1 (smallest margin) Padding 1 (smallest padding) </div>
+  <div class="bg-primary m-5 p-5 "> Sets margin 5 (largest margin) padding 5 (largest padding) </div>
+  <div class="bg-primary mt-3 mb-4 ms-5 me-1 ps-5 pt-4 pe-2 pb-1"> m & p for each direction </div>
   
-  <!--
+
+ <!-- border -->
+  <h2>--- Border ---</h2>
+  <div class="m-3 p-3 border"> Default Border </div>
+  <div class="m-3 p-3 border-top border-end"> Individual Border </div>
+  <!--Border color-->
+  <div class="m-3 p-3 border-start border-danger border-end"> Border with danger color at start </div>
+  <!--Border Width-->
+  <div class="m-3 p-3 border-start border-warning border-5">  Thicker Border with warning color at start </div>
+  <!--Border Radius-->
+  <div class="m-3 p-3 rounded border border-5"> Rounded Border</div>
+  <div class="m-3 p-3 rounded-pill border border-5"> Rounded pill / 5 Border</div>
+  <div class="m-3 p-3 rounded-3 border border-5"> Rounded 3 Border</div>
+  <div class="m-3 p-3 rounded-circle border border-5"> Rounded circle Border</div>
+  <div class="m-3 p-3 rounded-top border border-5"> Top Rounded  Border</div>
+  <div class="m-3 p-3 rounded-top-5 border border-5"> Top Rounded 5 Border</div>
+
+ <!--
   Containers are used to pad the content inside of them, and there are two container classes available:
   i) .container class provides a responsive fixed width container
   ii) .container-fluid class provides a full width container, spanning the entire width of the viewport
