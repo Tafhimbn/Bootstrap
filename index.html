@@ -184,8 +184,51 @@
   <div class="container-fluid">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
 
 
+<!-- Grid Layout -->
+ <h2>--- Grid Layout ---</h2>
+
+ <!--Basic Structure of Grid  -->
+ <h2> Basic Structure of Grid </h2>
+ <div class="container">
+  <div class="row"> 
+    <div class="col border">Col A</div>
+    <div class="col border">Col B</div>
+    <div class="col border">Col C</div>
+  </div>
+ </div>
+
+ <!--column widths of Grid -->
+ <h2> column widths of Grid </h2>  <!-- Every has maximum 12 column -->
+ <div class="container-lg my-3">   <!-- large & Margin 3-->
+  <div class="row"> 
+    <div class="col-6 bg-primary text-center text-info ">Col A</div>
+    <div class="col-3 bg-danger text-end text-primary ">Col B</div>
+    <div class="col-3 bg-success text-center text-decoration-line-through">Col C</div>
+  </div>
+ </div>
+
+ <!-- responsive column widths  -->
+ <h2> responsive column widths </h2> <!-- On mobile phones or screens that are less than 576px wide, the columns will automatically stack on top of each other. -->
+ <div class="container-lg my-3">
+  <div class="row"> 
+    <div class="col-sm-4 col-lg-6 bg-primary text-center">Col A</div>
+    <div class="col-sm-4 col-lg-3 bg-danger text-center">Col B</div>
+    <div class="col-sm-4 col-lg-3 bg-success text-center">Col C</div>
+  </div>
+ </div>
+ 
+<!-- justifying column -->
+ <h2> justifying column </h2>
+ <div class="container-lg my-3">
+       <div class="row justify-content-between">
+          <div class="col-3 bg-primary text-center">A</div>
+          <div class="col-3 bg-danger text-center">B</div>  
+          <div class="col-3 bg-warning text-center">C</div>
+       </div>
+  </div>
+
+
+
   <script src="js/bootstrap.bundle.js"> </script> <!-- we add javascript in body  -->
 </body>
-
-
 </html>
