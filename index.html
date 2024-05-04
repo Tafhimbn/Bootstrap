@@ -141,26 +141,48 @@
   <!--Border Radius-->
   <div class="m-3 p-3 rounded border border-5"> Rounded Border</div>
   <div class="m-3 p-3 rounded-pill border border-5"> Rounded pill / 5 Border</div>
-  <div class="m-3 p-3 rounded-3 border border-5"> Rounded 3 Border</div>
+  <div class="m-3 p-3 rounded-3spacing border border-5"> Rounded 3 Border</div>
   <div class="m-3 p-3 rounded-circle border border-5"> Rounded circle Border</div>
   <div class="m-3 p-3 rounded-top border border-5"> Top Rounded  Border</div>
   <div class="m-3 p-3 rounded-top-5 border border-5"> Top Rounded 5 Border</div>
 
+ <!-- Box Shadow -->
+  <h2>--- Box Shadow ---</h2>
+  <div class="m-3 p-3 shadow-sm">Element with small box shadow</div>
+  <div class="m-3 p-3 shadow-lg">Element with large box shadow</div>
+
+ <!-- font weight -->
+  <h2>--- font weight ---</h2>
+  <p class="fw-bold">Bold Text</p>
+  <p class="fw-bolder">Bold Text</p>
+  <p class="fw-warning">Bold Text</p>
+  <p class="fst-italic">Bold Text</p>
+  <p class="fs-italic fw-light">Bold Text</p>
+
+<!-- Container -->
+ <h2>--- Container ---</h2>
  <!--
-  Containers are used to pad the content inside of them, and there are two container classes available:
+  Containers are used to pad the content inside of them, and there are three container classes available:
   i) .container class provides a responsive fixed width container
-  ii) .container-fluid class provides a full width container, spanning the entire width of the viewport
+  ii) .container-fluid class provides a full width container, 100% at all breakpoint; spanning the entire width of the viewport
+  iii) .container-{breakpoint}, which is width: 100% until the specified breakpoint
   -->
 
-  <div class="container"> </div>
-       <div class="row">
-          <div class="col-2 bg-primary">A</div>  <!-- Each will take 2 out of 12 columns -->
-          <div class="col-1 bg-light">B</div>   <!-- bg-primary is Bootstrip background color class-->
-          <div class="col-5 bg-warning">C</div>
-          <div class="col-2 bg-success">D</div>  
-          <div class="col-1 bg-info">E</div>
-          <div class="col-1 bg-secondary">F</div>  
-       </div>
+  <h2>-- Default container (Extra Small: max-width  less than 576px) --</h2>
+  <div class="container"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+  <h2>-- container-small ( max-width greater than or equal 576px )  --</h2>
+  <div class="container-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+  <h2>-- container-medium ( max-width greater than or equal 768/px )  --</h2>
+  <div class="container-md">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+  <h2>-- container-large ( max-width greater than or equal 992/px )  --</h2>
+  <div class="container-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+  <h2>-- container-Extra large ( max-width greater than or equal 1200/px )  --</h2>
+  <div class="container-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+  <h2>-- container-XX-large ( max-width greater than or equal 1400/px )  --</h2>
+  <div class="container-xxl">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+  <h2>-- container-width 100% ( width 100% at all breakpoints )  --</h2>
+  <div class="container-fluid">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+
 
   <script src="js/bootstrap.bundle.js"> </script> <!-- we add javascript in body  -->
 </body>
