@@ -211,8 +211,8 @@
  <h2> responsive column widths </h2> <!-- On mobile phones or screens that are less than 576px wide, the columns will automatically stack on top of each other. -->
  <div class="container-lg my-3">
   <div class="row"> 
-    <div class="col-sm-4 col-lg-6 bg-primary text-center">Col A</div>
-    <div class="col-sm-4 col-lg-3 bg-danger text-center">Col B</div>
+    <div class="col-sm-4 col-lg-6 bg-primary text-center">Col A</div> <!-- col-sm   small devices - screen width equal to or greater than 576px -->
+    <div class="col-sm-4 col-lg-3 bg-danger text-center">Col B</div>  <!-- .col-lg  large devices - screen width equal to or greater than 992px -->
     <div class="col-sm-4 col-lg-3 bg-success text-center">Col C</div>
   </div>
  </div>
@@ -226,6 +226,28 @@
           <div class="col-3 bg-warning text-center">C</div>
        </div>
   </div>
+
+
+<!-- main image & intro text -->
+<section id="intro">
+  <div class="container-lg">
+     <div class="row justify-content-center align-items-center">
+       <div class="col-md-5 text-md-start"> <!-- .col-md (medium devices - screen width equal to or greater than 768px -->
+         <h1>
+           <div class="display-2"> CAREER JUMP! </div>
+           <div class="display-5"> How to Successfully Change Your Professional Path </div>
+          </h1>
+         <p class= "lead my-4 text-muted"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+         <a href="#pricing" class=" btn btn-secondary btn-lg"> Buy Now</a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+         <img class="img-fluid" src="/content/careerjump.png" alt="ebook cover">
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
 
 
 
