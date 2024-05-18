@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" data-bs-theme="dark"> <!--fix web page theme data-bs-theme="light" --> 
+<html lang="en" data-bs-theme="light"> <!--fix web page theme data-bs-theme="dark" for dark theme--> 
 
 <head>
 
@@ -228,6 +228,145 @@
   </div>
 
 
+<!-- Tab view -->
+ <!-- nav -->
+
+     <!-- A "nav" is an HTML element that is normally used to enclose other elements related to navigation. 
+  The complete set of the "nav" and the other elements it encloses would typically render the navbar -->
+
+  <ul class="nav nav-pills"> <!-- "nav-pills" refers to add fill color in navigation bar button -->
+                             <!-- To center/justify the tabs and pills, use the ".nav-justified class.-->
+    <li class="nav-item"> <!-- nav-items refers to the individual elements or links within a navigation bar -->
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <!-- A "NavLink" is a special kind of <Link> that knows whether or not it is "active", "pending", or "transitioning" -->
+         <!-- The aria-current can be used to indicate that an element represents the current item within container or set of related elements. 
+              It can take multiple values, specifically: page , step , location , date , time , false , true .-->
+      </li>    
+     <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item dropdown">    <!-- Dropdown menu in navigation bar-->
+      <a class="nav-link dropdown-toogle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Book</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Programming Book</a></li>
+        <li><a class="dropdown-item" href="#">Career related Book</a></li>
+        <li><a class="dropdown-item" href="#">Literature related Book</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">More</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <!-- "aria-disabled" attribute is used to indicate the disabled state of an element to assistive technologies, such as screen readers. -->
+    </li>
+  </ul>
+
+  <!-- nav using button & Description-->
+  <nav>
+    <div class="nav nav-tabs">  <!-- the ".nav-"tabs" class to generate a tabbed interface. Use them to create tabbable regions with our tab JavaScript plugin.-->
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#HomeView"> Home </button>
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#AboutView"> About </button>
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ShopView"> Shop </button>
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#AuthorView"> Authors </button>
+      <button class="nav-link disabled" data-bs-toggle="tab" data-bs-target="#ContactView"> Contact </button>
+    </div>   <!-- The "data-bs-target" attribute is used to specify the target element for certain interactive components, such as modals, collapses, tooltips, and carousels-->
+             <!-- The "data-bs-toggle" attribute is used to specify the type of interactive element you are creating, such as modals, dropdowns, tooltips, tabs, and more. -->
+    <div class="tab-content ">
+      <div class="tab-pane fade show active" id="HomeView">
+             <p> Home View. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias praesentium unde optio dolor fuga dolorum quae! </p>
+      </div>
+      <div class="tab-pane  fade" id="AboutView">
+        <p> About. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias praesentium unde optio dolor fuga dolorum quae! </p>
+      </div>
+      <div class="tab-pane fade" id="ShopView">
+         <p> Shop view. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias praesentium unde optio dolor fuga dolorum quae! </p>
+      </div>
+      <div class="tab-pane fade" id="AuthorView">
+          <p> Author View. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias praesentium unde optio dolor fuga dolorum quae! </p>
+      </div>
+      <div class="tab-pane fade " id="ContantView">
+        <p> Content view. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias praesentium unde optio dolor fuga dolorum quae! </p>
+      </div>
+     </div>
+
+  </nav>
+
+
+  <!-- navbar -->
+
+<nav class="navbar navbar-expand-lg shadow-sm " style="background-color:#e3f2fd"> 
+       <!-- Navbar brand -->
+    <a href="#" class="navbar-brand align-items-left">  <!-- .navbar-brand for your company, product, or project name. -->
+      <img src="content/bookshop.png" class="me-1" height="25" alt="MDB Logo" loading="lazy"/>
+      <small> Book Shop  </small>
+      </a>
+      
+      <!-- search option-->
+    </ul>
+    <div>
+      <form class="d-flex input-group w-auto">  <!-- .d-flex .flex-row classes to keep the icons inline when the navbar is collapsed. Without this, they will stack one under another. -->
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="serach-addon"/>
+        <!-- <button> Search </button> -->
+        <span class="input-group-text border-0" id="serach-addon">
+          <i class="fas fa-search">Search</i>
+        </span>
+      </form>
+    </div>
+
+     <!-- Container wrapper -->
+    <a class="container-fluid">
+    
+    <!-- Toggle button -->
+    <button 
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse" 
+    data-bs-target="#NavMenuPanel"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"> </span>  <!-- .navbar-toogler for use with our collapse plugin and other navigation toggling behaviors -->
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="NavMenuPanel"> <!-- .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint-->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">    <!--.navbar-nav for built-height and lightweight navigation (including support for dropdowns)-->
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Book</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Programming Book</a></li>
+            <li><a class="dropdown-item" href="#">Literature Book</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">More</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Authors</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li> 
+
+        <!-- Left links -->
+      <div class="d-flex align-items-left ">
+        <button data-mdb-ripple-init type="button" class="btn btn-primary me-3">
+          Sign up for free
+        </button>
+        <button data-mdb-ripple-init type="button" class="btn btn-link px-3 me-2">
+          Login
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
 <!-- main image & intro text -->
 <section id="intro">
   <div class="container-lg">
@@ -247,8 +386,6 @@
     </div>
   </div> 
 </section>
-
-
 
 
   <script src="js/bootstrap.bundle.js"> </script> <!-- we add javascript in body  -->
