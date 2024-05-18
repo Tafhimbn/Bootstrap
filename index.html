@@ -181,8 +181,63 @@
   <h2>-- container-XX-large ( max-width greater than or equal 1400/px )  --</h2>
   <div class="container-xxl">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
   <h2>-- container-width 100% ( width 100% at all breakpoints )  --</h2>
-  <div class="container-fluid">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
+  <div class="container-fluid">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.   </div>
 
+<!-- Cards -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 p-5">
+
+        <div class="card w-50">
+        <img src="https://placehold.co/600x400/000000/FFFFFF.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"> Card title</h5>
+          <p class="card-text"> Some quick example text to build on the card title</p>
+          <a href="#" class="btn btn-primary"> Go somewhere </a>
+        </div>
+        </div>
+
+      </div> 
+    </div>
+  </div>
+
+<!-- Dropdown -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 p-5">
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+          Select Country
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">BANGLADESH</li>
+            <li class="dropdown-item">USA</li>
+            <li class="dropdown-item">CANADA</li>
+            <li class="dropdown-item">INDIA</li>
+        </ul>
+
+      </div>
+      k
+    </div> 
+  </div>
+</div>
+
+<!-- Alert -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <div class="alert alert-primary">This is Bootstrap Primary alert!</div>
+        <div class="alert alert-success">This is Bootstrap Success alert!</div>
+        <div class="alert alert-warning">This is Bootstrap Warning alert!</div>
+        <div class="alert alert-light">This is Bootstrap Light alert!</div>
+        <div class="alert alert-danger">This is Bootstrap Danger alert!</div>
+        <div class="alert alert-info">This is Bootstrap Info alert!</div>
+        <div class="alert alert-dark">This is Bootstrap Dark alert!</div>
+      </div> 
+    </div>
+  </div>
 
 <!-- Grid Layout -->
  <h2>--- Grid Layout ---</h2>
@@ -226,6 +281,108 @@
           <div class="col-3 bg-warning text-center">C</div>
        </div>
   </div>
+
+<!-- Form -->
+   <!-- Form Control-->
+ <div class="container-fluid">
+     <div class="row">
+      <form>
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control "/> <br>
+        <input type="email" class="form-control form-control-sm"/> <br>
+        <input type="email" class="form-control form-control-lg"/> <br>
+        <input type="email" class="form-control" readonly/> <br>
+        <input type="email" class="form-control" disabled/> <br>  
+        <input type="file" class="form-control"/> <br>
+        <textarea class="form-control" rows="10"></textarea>
+      </form>  
+     </div>
+ </div>
+    
+   <!-- Form Select -->
+
+    <div class="container-fluid">
+      <div class="row">
+       <form>
+         <select class="form-select">
+          <option selected value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+         </select>
+
+         <select class="form-select form-control-sm">
+          <option>Option 1</option>
+          <option selected>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+         </select>
+       </form>  
+      </div>
+  </div>
+
+    <!-- Form Check-->
+
+     <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+         <form>
+           <div class="form-check"> 
+            <input type="checkbox" class="form-check-input">
+            <label>Select 1</label>
+           </div>
+           <div class="form-check"> 
+            <input type="checkbox" class="form-check-input">
+            <label>Select 2</label>
+           </div>
+           <div class="form-check"> 
+            <input type="checkbox" class="form-check-input">
+            <label>Select 3</label>
+           </div>
+          </form> 
+        </div> 
+      </div>
+  </div>
+
+    <!-- Form Radio input-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+         <form>
+           <div class="form-check"> 
+            <input type="radio" name="nameofselection" class="form-check-input">
+            <label>Select 1</label>  <!-- name attribute used for making single selection-->
+           </div>
+           <div class="form-check"> 
+            <input type="radio" name="nameofselection" class="form-check-input">
+            <label>Select 2</label>
+           </div>
+           <div class="form-check"> 
+            <input type="radio" name="nameofselection" class="form-check-input">
+            <label>Select 3</label>
+           </div>
+          </form> 
+        </div> 
+      </div>
+  </div>
+
+
+  <!-- Form Range input-->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+           <form>
+            <input type="range" class="from-range"> <br>
+            <input type="range" class="from-range" disabled><br>
+            <input type="range" class="from-range" min="5" max="10"><br>
+            <input type="range" class="from-range" min="5" max="15" step="3">
+           </form>
+          </div> 
+        </div>
+    </div>
+
 
 
 <!-- Tab view -->
@@ -288,7 +445,6 @@
         <p> Content view. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias praesentium unde optio dolor fuga dolorum quae! </p>
       </div>
      </div>
-
   </nav>
 
 
